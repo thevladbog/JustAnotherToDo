@@ -1,3 +1,14 @@
 {
-  "title": "todos"
+  "title": "todos",
+  "input": {
+    "placeholder": "What needs to be done?"
+  },
+  "itemsCount": "{{ count }} items left",
+  "noItems": "All tasks completed!",
+  "oneItem": "{{ count }} item left",
+  "someItems": "{{ count }} items left",
+  "allTodos": "All",
+  "activeTodos": "Active",
+  "doneTodos": "Done",
+  "clearAll": "Clear All"
 }

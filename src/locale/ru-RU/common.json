@@ -2,5 +2,13 @@
   "title": "Список дел",
   "input": {
     "placeholder": "Запланируем дело?"
-  }
+  },
+  "itemsCount": "{{ count }} задач в работе",
+  "noItems": "Все дела сделаны!",
+  "oneItem": "{{ count }} задача в работе",
+  "someItems": "{{ count }} задачи в работе",
+  "allTodos": "Все задачи",
+  "activeTodos": "К выполнению",
+  "doneTodos": "Завершенные задачи",
+  "clearAll": "Удалить все задачи"
 }

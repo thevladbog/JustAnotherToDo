@@ -3,42 +3,230 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: auto;
+  margin: 35px auto 90px;
+  padding: 35px 25px;
+
+  background-color: rgb(210, 243, 221);
+  border-radius: 30px;
+
+  box-shadow: 14px 8px 22px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 14px 8px 22px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 14px 8px 22px -2px rgba(0, 0, 0, 0.75);
 
   .InputField {
     margin: auto;
+    width: 1100px;
+
+    & > input {
+      width: 1064px;
+      height: 50px;
+      font-size: 36px;
+      padding: 0 15px;
+      outline: none;
+
+      border-radius: 15px;
+      border: 3px solid white;
+
+      box-shadow: 14px 8px 22px -2px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 14px 8px 22px -2px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 14px 8px 22px -2px rgba(0, 0, 0, 0.75);
+
+      &:focus, &:active, &:hover {
+        border-color: white;
+        border: 3px solid #39aa5eff;
+      }
+    }
   }
 
   .ListOfTodos {
     display: flex;
     flex-direction: column;
     margin: auto;
+    width: 1050px;
 
     .todo {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
+      margin-top: 15px;
+      padding: 5px;
+      border: 3px solid white;
+      border-radius: 25px;
+
+      background-color: white;
+
+      box-shadow: 14px 8px 22px -2px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 14px 8px 22px -2px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 14px 8px 22px -2px rgba(0, 0, 0, 0.75);
+
+      & > p {
+        width: 1130px;
+        padding-left: 15px;
+      }
+      
+      & > div {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        margin: auto 0;
+      }
 
       & > div > svg {
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
+        width: 50px;
+        height: 50px;
         fill: #15161bff;
 
         &:hover {
             fill: #39aa5eff;
         }
       }
+
+      & > .deleteIcon > svg {
+        &:hover {
+            fill: #d52821ff;
+        }
+      }
     }
 
     .done {
       text-decoration: line-through;
+      border: 3px solid #39aa5eff;
+      background-color: rgb(183, 236, 201);
+
+      & > p {
+        font-style: italic;
+        color: darkgrey;
+      }
 
       & > div > svg {
         fill: #39aa5eff;
+      }
+
+      & > .deleteIcon > svg {
+        fill: #d52821ff;
       }
     }
   }
 
   .ListSettings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 1100px;
+    height: 40px;
+    margin: 30px auto auto;
+    padding: 5px 25px;
+
+    border-radius: 15px;
+    border: 3px solid white;
+    background-color: white;
+    
+    box-shadow: 14px 8px 22px -2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 14px 8px 22px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 14px 8px 22px -2px rgba(0, 0, 0, 0.75);
+
+    & > .itemsCount {
+      font-style: italic;
+      margin: auto 0;
+    }
+
+    & > .select {
+      width: 500px;
+    }
+
+    & > .clearDoneTodos > button {
+        background-color: #39aa5eff;
+        border: none;
+        color: white;
+        padding: 5px 22px;
+        height: 40px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 15px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgb(34, 121, 63);
+        }
+    }
+  }
+}
+
+@media (max-width: 1270px) {
+  .MainWindow {
+      width: 800px;
+  
+      .InputField {
+        width: 700px;
+  
+        & > input {
+          width: 664px;
+      }}
+  
+      .ListOfTodos {
+        width: 650px;
+  
+        .todo {
+  
+          & > p {
+            width: 730px;
+          }
+        }
+      }
+  
+      .ListSettings {
+        width: 700px;
+  
+        & > .select {
+          width: 300px;
+        }
+      }
+    }
+}
+
+@media (max-width: 870px) {
+  .MainWindow {
+    width: 600px;
+
+    .InputField {
+      width: 500px;
+
+      &>input {
+        width: 464px;
+      }
+    }
+
+    .ListOfTodos {
+      width: 450px;
+
+      .todo {
+
+        & > p {
+          width: 530px;
+        }
+      }
+    }
+
+    .ListSettings {
+      width: 500px;
+
+      & > .itemsCount {
+        font-size: 12px;
+        width: 100px;
+      }
+
+      & > .select {
+        width: 200px;
+      }
+
+      & > .clearDoneTodos > button {
+        width: 180px;
+        font-size: 12px;
+      }
+    }
   }
 }
