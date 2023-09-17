@@ -25,8 +25,8 @@ const App: React.FC = () => {
   };
 
   const options: ILanguageOptions[] = [
-    { value: Language.RU, label: 'Русский' },
-    { value: Language.EN, label: 'English' }
+    { value: Language.RU, label: '\uD83C\uDDF7\uD83C\uDDFA Русский' },
+    { value: Language.EN, label: '\uD83C\uDDFA\uD83C\uDDF8 English' }
   ];
 
   useEffect(() => {
