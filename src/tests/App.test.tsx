@@ -1,5 +1,5 @@
 import { describe, expect } from '@jest/globals';
-import { render, screen, fireEvent, act } from '@testing-library/react';
+import { render, screen, act } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import 'fake-indexeddb/auto';
 import Dexie from 'dexie';
