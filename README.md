@@ -1,4 +1,4 @@
-[![Vercel Production Deployment](https://github.com/thevladbog/JustAnotherToDo/actions/workflows/production.yaml/badge.svg?branch=master&event=deployment)](https://github.com/thevladbog/JustAnotherToDo/actions/workflows/production.yaml)
+[![Vercel Preview Deployment](https://github.com/thevladbog/JustAnotherToDo/actions/workflows/preview.yaml/badge.svg?branch=master)](https://github.com/thevladbog/JustAnotherToDo/actions/workflows/preview.yaml) [![Vercel Production Deployment](https://github.com/thevladbog/JustAnotherToDo/actions/workflows/production.yaml/badge.svg?branch=master)](https://github.com/thevladbog/JustAnotherToDo/actions/workflows/production.yaml)
 
 # Just Another ToDo App
 
